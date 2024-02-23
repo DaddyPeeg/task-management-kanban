@@ -6,6 +6,7 @@ import { useFormState } from "react-dom";
 
 const Form = () => {
   const initialState = { message: null, errors: {} };
+  //@ts-ignore
   const [state, dispatch] = useFormState(create, initialState);
   return (
     <form action={dispatch}>
