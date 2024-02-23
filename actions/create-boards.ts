@@ -32,6 +32,7 @@ export async function create(prevState: State, formData: FormData) {
   const { title } = validatedFields.data;
   try {
     await db.board.create({
+      //@ts-ignore
       data: {
         title,
       },
